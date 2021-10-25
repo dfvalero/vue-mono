@@ -4,10 +4,14 @@
   "private": true,
   "description": "UI Package for Vue apps",
   "scripts": {
-    "build": "vue-cli-service build --target lib --inline-vue --name index src/index.ts"
+    "clean": "rimraf dist",
+    "build": "yarn clean && vue-cli-service build --target lib --inline-vue --name index src/index.ts",
+    "build:v2": "vue-demi-switch 2 && yarn build",
+    "build:v3": "vue-demi-switch 3 && yarn build"
   },
   "main": "src/index.ts",
   "dependencies": {
+    "@vue/composition-api": "^1.2.4",
     "core-js": "^3.18.1",
     "vue-demi": "0.11.4"
   },
@@ -17,6 +21,7 @@
     "@vue/compiler-sfc": "3.0.0",
     "babel-loader": "8.2.2",
     "node-sass": "^4.14.1",
+    "rimraf": "^3.0.2",
     "sass-loader": "8.0.2",
     "typescript": "~4.1.5",
     "vue": "3.0.7",
