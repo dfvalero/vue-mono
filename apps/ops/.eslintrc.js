@@ -1,0 +1,21 @@
+module.exports = {
+  rules: {
+    'prettier/prettier': 'warn',
+    'prefer-template': 'warn',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
+    'no-redeclare': 'off',
+    '@typescript-eslint/consistent-type-imports': 'off',
+    '@typescript-eslint/no-redeclare': ['error'],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['warn'],
+    '@typescript-eslint/no-useless-constructor': 'off',
+    'import/export': 'off',
+    'import/first': 'off',
+    'import/namespace': 'off',
+    'import/no-duplicates': 'off',
+    'import/no-named-as-default-member': 'off',
+    'import/no-unresolved': 'off',
+    'import/order': 'off',
+  },
+}

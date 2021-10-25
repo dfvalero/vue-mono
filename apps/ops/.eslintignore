@@ -1,0 +1,7 @@
+static
+dist
+node_modules
+coverage
+build/*.js
+config/*.js
+src/api/localConfig.js

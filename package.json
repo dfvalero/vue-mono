@@ -1,0 +1,12 @@
+{
+  "name": "@dfvalero/vue-mono",
+  "version": "1.0.0",
+  "description": "Monorepo for vue apps and packages",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": [
+        "--frozen-lockfile"
+      ]
+    },
+    "version": {
+      "message": "chore(release): %v"
+    }
+  },
+  "npmClient": "yarn",
+  "packages": [
+    "packages/*",
+    "apps/*"
+  ],
+  "useWorkspaces": true,
+  "version": "0.160.6"
+}

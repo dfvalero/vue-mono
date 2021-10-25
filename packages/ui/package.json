@@ -1,0 +1,29 @@
+{
+  "name": "@dfvalero/vue-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UI Package for Vue apps",
+  "scripts": {
+    "build": "vue-cli-service build --target lib --inline-vue --name index src/index.ts"
+  },
+  "main": "src/index.ts",
+  "dependencies": {
+    "core-js": "^3.18.1",
+    "vue-demi": "0.11.4"
+  },
+  "devDependencies": {
+    "@babel/core": "7.14.6",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/compiler-sfc": "3.0.0",
+    "babel-loader": "8.2.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "8.0.2",
+    "typescript": "~4.1.5",
+    "vue": "3.0.7",
+    "vue-loader": "16.3.0"
+  },
+  "peerDependencies": {
+    "@vue/composition-api": "^1.0.0-rc.5",
+    "vue": "^2.6.0 || ^3.0.0"
+  }
+}
